@@ -14,6 +14,7 @@ namespace WindowsFormsApp
     {
         double firstNumber;
         string selectOperator;
+        bool clearFlag;
         public Form1()
         {
             InitializeComponent();
