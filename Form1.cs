@@ -18,6 +18,7 @@ namespace WindowsFormsApp
         public Form1()
         {
             InitializeComponent();
+            clearFlag = false;
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -46,9 +47,10 @@ namespace WindowsFormsApp
 
         private void button16_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "0" && textBox1.Text != null)
+            if ((textBox1.Text == "0" && textBox1.Text != null) || clearFlag)
             {
                 textBox1.Text = "0";
+                clearFlag = false;
             }
             else
             {
@@ -58,9 +60,10 @@ namespace WindowsFormsApp
 
         private void button6_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "0" && textBox1.Text != null)
+            if ((textBox1.Text == "0" && textBox1.Text != null) || clearFlag)
             {
                 textBox1.Text = "4";
+                clearFlag = false;
             }
             else
             {
@@ -70,9 +73,10 @@ namespace WindowsFormsApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "0" && textBox1.Text != null)
+            if ((textBox1.Text == "0" && textBox1.Text != null) || clearFlag)
             {
                 textBox1.Text = "7";
+                clearFlag = false;
             }
             else
             {
@@ -82,9 +86,10 @@ namespace WindowsFormsApp
 
         private void button8_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "0" && textBox1.Text != null)
+            if ((textBox1.Text == "0" && textBox1.Text != null) || clearFlag)
             {
                 textBox1.Text = "6";
+                clearFlag = false;
             }
             else
             {
@@ -94,9 +99,10 @@ namespace WindowsFormsApp
 
         private void button7_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "0" && textBox1.Text != null)
+            if ((textBox1.Text == "0" && textBox1.Text != null) || clearFlag)
             {
                 textBox1.Text = "5";
+                clearFlag = false;
             }
             else
             {
@@ -106,9 +112,10 @@ namespace WindowsFormsApp
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "0" && textBox1.Text != null)
+            if ((textBox1.Text == "0" && textBox1.Text != null) || clearFlag)
             {
                 textBox1.Text = "9";
+                clearFlag = false;
             }
             else
             {
@@ -123,9 +130,10 @@ namespace WindowsFormsApp
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "0" && textBox1.Text != null)
+            if ((textBox1.Text == "0" && textBox1.Text != null) || clearFlag)
             {
                 textBox1.Text = "8";
+                clearFlag = false;
             }
             else
             {
@@ -139,6 +147,7 @@ namespace WindowsFormsApp
             double result;
 
             secondNumber = Convert.ToDouble(textBox1.Text);
+            clearFlag = true;
 
             if (selectOperator == "+") { result = firstNumber + secondNumber; textBox1.Text = Convert.ToString(result); firstNumber = result; }
             if (selectOperator == "-") { result = firstNumber - secondNumber; textBox1.Text = Convert.ToString(result); firstNumber = result; }
@@ -170,9 +179,10 @@ namespace WindowsFormsApp
 
         private void button11_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "0" && textBox1.Text != null)
+            if ((textBox1.Text == "0" && textBox1.Text != null) || clearFlag)
             {
                 textBox1.Text = "1";
+                clearFlag = false;
             }
             else
             {
@@ -182,9 +192,10 @@ namespace WindowsFormsApp
 
         private void button12_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "0" && textBox1.Text != null)
+            if ((textBox1.Text == "0" && textBox1.Text != null) || clearFlag)
             {
                 textBox1.Text = "2";
+                clearFlag = false;
             }
             else
             {
@@ -194,9 +205,10 @@ namespace WindowsFormsApp
 
         private void button13_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "0" && textBox1.Text != null)
+            if ((textBox1.Text == "0" && textBox1.Text != null) || clearFlag)
             {
                 textBox1.Text = "3";
+                clearFlag = false;
             }
             else
             {
